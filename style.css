@@ -1,0 +1,27 @@
+/*Grid*/
+
+
+:root{
+    --color-grid-default: hsl(30, 32%, 90%);
+    --color-grid-highlight: hsl(32, 87%, 79%);
+}
+.grid{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.grid-row{
+    display: flex;
+    height: auto;
+    flex: 1;
+}
+
+.grid-item{
+    flex: 1;
+    aspect-ratio: 1;
+    background-color: var(--color-grid-default);
+}
+
+.grid-item.highlight{
+    background-color: var(--color-grid-highlight);
+}
